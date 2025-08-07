@@ -55,7 +55,7 @@
         newnode->next=temp->next;
         temp->next=newnode;
 
-        //Inserting elemt at the end 
+        //Inserting element at the end 
         printf("Enter value to insert at the end");
         scanf("%d", &value);
         newnode=(struct Node*)malloc(sizeof(struct Node));
@@ -72,7 +72,7 @@
             temp->next=newnode;
         }
 
-
+        //display the linked list
         temp = head;
         while(temp!=NULL){
             printf("%d -> ", temp->data);
@@ -83,4 +83,5 @@
     
     
 return 0;
+
 }
